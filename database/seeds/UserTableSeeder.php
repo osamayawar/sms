@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Foundation\Auth\User;
+use SMS\User;
 use Illuminate\Database\Seeder;
 
 class UserTableSeeder extends Seeder
