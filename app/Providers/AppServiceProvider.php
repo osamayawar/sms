@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace SMS\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
