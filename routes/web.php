@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('auth/login');
-});
 
 
 
 
 
 Auth::routes();
+
+Route::get('/', function () {
+	return Auth::guest() ? view('auth/login') : redirect('/home');
+});
 
 Route::get('/home', 'HomeController@index');
