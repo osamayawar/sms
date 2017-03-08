@@ -20,6 +20,7 @@ class Students extends Migration
             $table->string('email')->unique();
             $table->string('address');
             $table->string('contact');
+            $table->string('user_id');
             $table->rememberToken();
             $table->timestamps();
         });
