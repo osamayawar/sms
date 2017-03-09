@@ -23,3 +23,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index');
+Route::get('/student', 'StudentController@index');
+Route::get('/student/add', 'StudentController@add');
