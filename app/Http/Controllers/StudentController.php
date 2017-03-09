@@ -2,6 +2,7 @@
 
 namespace SMS\Http\Controllers;
 
+use SMS\Student;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -12,10 +13,11 @@ class StudentController extends Controller
     }
 
     public function index() {
-    	return view('student/index');
+    	$student = Student::all();
+    	return view('student.index', ['student', $student]);
     }
 
     public function add() {
-    	return view('student/add');
+    	return view('student.add');
     }
 }
